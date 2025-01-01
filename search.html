@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Tricker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/Logos/logo.ico" type="image">
+    <style>
+        body.bg {
+            background-image: url('Images/others/bg2');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 64px); 
+            padding-top: 64px; 
+        }
+
+        .search-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .search-container input[type="text"] {
+            width: 70%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .search-container input[type="submit"] {
+            padding: 15px 30px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #005f5f;
+        }
+
+        .search-container input[type="text"]:focus {
+            border-color: #008080;
+            box-shadow: 0 0 10px rgba(0, 128, 128, 0.3);
+        }
+
+        .header-text {
+            color: white;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+    <header>
+        <nav class="teal">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Travel Tracker</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Discover</a></li>
+                    <li><a href="services.html" target="_blank">Services</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="search.html" class="waves-effect waves-light btn">Search</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="header-text">Find Your Next Destination</div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search destinations, activities, or attractions..." />
+            <input type="submit" value="Search" />
+        </div>
+    </div>
+
+</body>
+</html>
